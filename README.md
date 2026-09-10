@@ -7,7 +7,10 @@ Project 1 - Flocking**
 
 Result:
 
-[scrshot] [gif]
+Results are captured with Scattered Uniform Grid, 50000 Boids and 128 Block Size.
+
+![screenshot](images/result.png)
+![gif](images/result.gif)
 
 ## Performance Analysis
 
@@ -58,23 +61,14 @@ Method: WithVisualization, Coherent Uniform Grid, 100000 Boids
 
 **For each implementation, how does changing the number of boids affect performance? Why do you think this is?**
 
-_your answer here_
 
 **For each implementation, how does changing the block count and block size affect performance? Why do you think this is?**
 
-_your answer here_
 
 **For the coherent uniform grid: did you experience any performance improvements with the more coherent uniform grid? Was this the outcome you expected? Why or why not?**
 
-_your answer here_
 
 **Did changing cell width and checking 27 vs 8 neighboring cells affect performance? Why or why not?**
 
-_your answer here_
 
-Repo Link
-(Briefly) Mentions features that you've completed. Especially those bells and whistles you want to highlight
-Feature 0
-Feature 1
-...
-Feedback on the project itself, if any.
+
