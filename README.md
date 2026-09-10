@@ -39,7 +39,7 @@ Block Size: 128
 | 250,000  | 0.7 | 143.4 | 450.7 |
 | 500,000  | 0.2 | 45.7 | 285.8 |
 
-<img src="images/graph_boidcount.png" width="600">
+<img src="images/graph_boidcount.png" width="700">
 
 ### Framerate change with increasing block size
 
@@ -54,7 +54,7 @@ Method: WithVisualization, Coherent Uniform Grid, 100000 Boids
 | 512  | 564.3 |
 | 1024 | 918.7 |
 
-<img src="images/graph_blocksize.png" width="600">
+<img src="images/graph_blocksize.png" width="700">
 
 ### Discussion Questions
 
