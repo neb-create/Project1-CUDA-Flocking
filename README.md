@@ -9,8 +9,7 @@ Result:
 
 Results are captured with Scattered Uniform Grid, 50000 Boids and 128 Block Size.
 
-<img src="images/result.png" width="400">
-<img src="images/result.gif" width="400">
+<img src="images/result.png" width="400"> <img src="images/result.gif" width="400">
 
 ## Performance Analysis
 
