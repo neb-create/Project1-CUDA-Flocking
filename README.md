@@ -37,7 +37,7 @@ Block Size: 128
 | 5,000    | 609.2 | 1878.9 | 2014.2 |
 | 25,000   | 58.9 | 1132.5 | 1905.4 |
 | 50,000   | 16.3 | 812.0 | 1630.3 |
-| 100,000  | 4.5 | 416.2 | 1317.9 |
+| 100,000  | 4.5 | 416.2 | 1017.9 |
 | 250,000  | 0.7 | 143.4 | 450.7 |
 | 500,000  | 0.2 | 45.7 | 285.8 |
 
@@ -45,7 +45,7 @@ Block Size: 128
 
 ### Framerate change with increasing block size
 
-Method: WithVisualization, Coherent Uniform Grid, 100000 Boids
+Method: With Visualization, Coherent Uniform Grid, 100000 Boids
 
 | Block Size | Framerate (fps) |
 |---|---|
@@ -66,7 +66,7 @@ Increasing the number of boids consistently makes the simulation run slower and 
 
 **For each implementation, how does changing the block count and block size affect performance? Why do you think this is?**
 
-Out of all the block sizes I've tested, 128 had the best performance and both increasing and decreasing it from there makes the performance worse again. unexpectedly, 1024 as a block size consistently had a massive performance spike over multiple attempts and I will look into possible explanations.
+Out of all the block sizes I've tested, 128 had the best performance and both increasing and decreasing it from there makes the performance worse again. Unexpectedly, 1024 as a block size consistently had a massive performance spike over multiple attempts and I will look into possible explanations.
 
 **For the coherent uniform grid: did you experience any performance improvements with the more coherent uniform grid? Was this the outcome you expected? Why or why not?**
 
