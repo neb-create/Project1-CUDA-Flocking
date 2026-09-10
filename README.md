@@ -74,5 +74,5 @@ Coherent uniform grid was a massive performance improvement across every scenari
 
 **Did changing cell width and checking 27 vs 8 neighboring cells affect performance? Why or why not?**
 
-Surprisingly, the 27 cell version consistently ran faster. I suspect that the reason of this is while the loop runs over more cells, the average cell contains less boids and looping over boids takes more time that looping over cells.
+Surprisingly, the 27 cell version consistently ran faster. I suspect that the reason of this is while the loop runs over more cells, the average cell contains less boids and looping over boids takes more time than looping over cells.
 
