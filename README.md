@@ -5,13 +5,15 @@ Project 1 - Flocking**
    [LinkedIn](https://www.linkedin.com/in/nicola-kong/), [Email]: nebfinn@gmail.com
 * Tested on: Windows 11, AMD Ryzen AI 9 HX 370 @ 2.0GHz 32GB, GTX 4060 8GB (Personal Laptop)
 
-Result:
+## Showcase
 
 Results are captured with Scattered Uniform Grid, 50000 Boids and 128 Block Size.
 
 <img src="images/result.png" width="400"> <img src="images/result.gif" width="400">
 
 ## Performance Analysis
+
+For the values listed in the following tables and graphs, I calculated the average fps of the simulation and waited for it to stabilize to record the value.
 
 ### Framerate change with increasing # of boids
 
@@ -60,14 +62,17 @@ Method: WithVisualization, Coherent Uniform Grid, 100000 Boids
 
 **For each implementation, how does changing the number of boids affect performance? Why do you think this is?**
 
+Increasing the number of boids consistently makes the simulation run slower and gets a slower fps. This is rather straight forward as more boids means more cycles to process through all the boids, especially if the number of boids is greater than the maximum amount of processes running in parallel at once.
 
 **For each implementation, how does changing the block count and block size affect performance? Why do you think this is?**
 
+Out of all the block sizes I've tested, 128 had the best performance and both increasing and decreasing it from there makes the performance worse again. unexpectedly, 1024 as a block size consistently had a massive performance spike over multiple attempts and I will look into possible explanations.
 
 **For the coherent uniform grid: did you experience any performance improvements with the more coherent uniform grid? Was this the outcome you expected? Why or why not?**
 
+Coherent uniform grid was a massive performance improvement across every scenario I tested. This matches my expectation as better memory locality for nearby cells will likely result in better performance due to a better cache efficiency.
 
 **Did changing cell width and checking 27 vs 8 neighboring cells affect performance? Why or why not?**
 
-
+Surprisingly, the 27 cell version consistently ran faster. I suspect that the reason of this is while the loop runs over more cells, the average cell contains less boids and looping over boids takes more time that looping over cells.
 
