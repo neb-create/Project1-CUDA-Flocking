@@ -9,8 +9,8 @@ Result:
 
 Results are captured with Scattered Uniform Grid, 50000 Boids and 128 Block Size.
 
-![screenshot](images/result.png)
-![gif](images/result.gif)
+<img src="images/result.png" width="400">
+<img src="images/gif" width="400">
 
 ## Performance Analysis
 
@@ -40,7 +40,7 @@ Block Size: 128
 | 250,000  | 0.7 | 143.4 | 450.7 |
 | 500,000  | 0.2 | 45.7 | 285.8 |
 
-![boid count vs framerate graph](images/graph_boidcount.png)
+<img src="images/graph_boidcount.png" width="600">
 
 ### Framerate change with increasing block size
 
@@ -55,7 +55,7 @@ Method: WithVisualization, Coherent Uniform Grid, 100000 Boids
 | 512  | 564.3 |
 | 1024 | 918.7 |
 
-![block size vs framerate graph](images/graph_blocksize.png)
+<img src="images/graph_blocksize.png" width="600">
 
 ### Discussion Questions
 
